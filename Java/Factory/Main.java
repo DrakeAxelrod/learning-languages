@@ -2,18 +2,20 @@ import java.util.Scanner;
 
 public class Main{
     public static void main(String[] args) {
-        
-        EnemyShip ufoShip = new UFOEnemyShip();
-        
-        Scanner userInput = new Scanner(System.in);
+        EnemyShipFactory shipFactory = new EnemyShipFactory();
+        EnemyShip theEnemy = null;
+        Scanner s = new Scanner(System.in);
+        System.out.println("What type of ship? (U/R/B)");
+        if (s.hasNextLine()){
 
-        String enemyShipOption = "";
-        if (userInput.hasNextLine()){
-            enemyShipOption = userInput.nextLine();
+            String typeOfShip = s.nextLine();
+            theEnemy = shipFactory.makeEnemyShip(typeOfShip);
+            
         }
 
-        if (enemyShipOption("U"))
-        doStuffEnemy(ufoShip);
+        if (theEnemy != null){
+            doStuffEnemy(theEnemy);
+        }
     }
 
     public static void doStuffEnemy(EnemyShip aEnemyShip){
