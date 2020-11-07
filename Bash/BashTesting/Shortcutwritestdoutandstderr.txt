@@ -1,0 +1,18 @@
+total 64
+drwxrwxr-x 2 drake drake 4096 Nov  1 16:00 .
+drwxr-xr-x 4 drake drake 4096 Nov  1 14:22 ..
+-rwxrwxr-x 1 drake drake  225 Nov  1 13:19 and_example.sh
+-rw-rw-r-- 1 drake drake   46 Nov  1 12:56 append_example.txt
+-rwxrwxr-x 1 drake drake  158 Nov  1 15:40 arguments_example.sh
+-rw-rw-r-- 1 drake drake   51 Nov  1 16:01 combinedstdfile.txt
+-rwxrwxr-x 1 drake drake  452 Nov  1 13:10 conditional_example.sh
+-rwxrwxr-x 1 drake drake   79 Nov  1 15:50 filereader_example.sh
+-rw-rw-r-- 1 drake drake   20 Nov  1 12:56 file.txt
+-rwxrwxr-x 1 drake drake  766 Nov  1 15:12 loops_example.sh
+-rw-rw-r-- 1 drake drake   90 Nov  1 15:46 readtxt.txt
+-rwxrwxr-x 1 drake drake  246 Nov  1 16:01 redirect_stdout_and_stderr.sh
+-rwxrwxr-x 1 drake drake  716 Nov  1 13:00 script.sh
+-rw-rw-r-- 1 drake drake    0 Nov  1 16:01 Shortcutwritestdoutandstderr.txt
+-rw-rw-r-- 1 drake drake   51 Nov  1 16:01 STANDARDERROR.txt
+-rw-rw-r-- 1 drake drake 1052 Nov  1 16:01 STANDARDOUT.txt
+-rw-rw-r-- 1 drake drake   34 Nov  1 12:52 Writing_from_Terminal_to_File_example.txt
