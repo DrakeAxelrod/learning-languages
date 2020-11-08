@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main(){
+int main(void)
+{
 
     char str[] = "Hello, World!";
 
@@ -16,6 +17,5 @@ int main(){
     numbers[6] = 70;
 
     printf("%s \n", str);
-    printf("4th element in the array %d", numbers[3]);
-    return 0;
+    printf("4th element in the array %d \n", numbers[3]);
 }
