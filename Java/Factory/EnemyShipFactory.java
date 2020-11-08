@@ -1,13 +1,12 @@
 public class EnemyShipFactory {
     
-    public EnemyShip makeEnemyShip(String newShipType){
-        EnemyShip newShip = null;
-
-        if(newShipType.equals("U")){
+    public EnemyShip makeEnemyShip(String option){
+        
+        if(option.equals("U")){
             return new UFOEnemyShip();
-        } else if(newShipType.equals("R")){
+        } else if(option.equals("R")){
             return new RocketEnemyShip();
-        } else if(newShipType.equals("B")){
+        } else if(option.equals("B")){
             return new BigUFOEnemyShip();
         }else {
             return null;

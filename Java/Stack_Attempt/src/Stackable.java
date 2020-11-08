@@ -1,7 +1,8 @@
-public interface Stackable<T> {
-    void push(Integer value);
-    Integer pop();
-    Integer peek();
+public interface Stackable<T> 
+{
+    void push(T value);
+    T pop();
+    T peek();
     boolean isEmpty();
     int size();
     int search(Object o);

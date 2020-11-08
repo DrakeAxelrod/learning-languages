@@ -1,5 +1,6 @@
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) 
+    {
         Stack<Integer> stack = new Stack<Integer>();
 
         System.out.println(stack.isEmpty());
@@ -10,6 +11,10 @@ public class Main {
         stack.push(16);
 
         System.out.println(stack.size());
+
+        int x = stack.pop();
+
+        System.out.println(x);
     
     }
 }
