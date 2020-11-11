@@ -33,6 +33,12 @@ public class Controller {
         }
     }
 
+    private void logout()
+    {
+        System.out.println("you have been logged out");
+        mainMenu();
+    }
+
     private void loginMenu() 
     {
         String[] options = {"Create Account", "Login", "Exit"};
@@ -51,7 +57,7 @@ public class Controller {
 
     private void mainMenu() 
     {
-        String[] options = {"option", "option", "Exit"};
+        String[] options = {"option", "option", "logout", "Exit"};
         menu = new Menu("Main Menu", options);
         do 
         {
@@ -60,7 +66,8 @@ public class Controller {
         {
             case "1" -> exit();
             case "2" -> exit();
-            case "3" -> exit();
+            case "3" -> logout();
+            case "4" -> exit();
         }
         } while (true);
     }
