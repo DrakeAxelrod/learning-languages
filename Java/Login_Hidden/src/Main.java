@@ -1,6 +1,4 @@
-package app;
-
-import app.controller.*;
+import controller.*;
 
 public class Main {
     public static void main(String[] args) {

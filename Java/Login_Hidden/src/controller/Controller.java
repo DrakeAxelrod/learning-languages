@@ -1,7 +1,8 @@
-package app.controller;
+package controller;
 
-import app.tool.*;
-import app.user.*;
+import tool.Menu;
+import tool.Tool;
+import user.Account;
 
 public class Controller {
     private Tool tool = Tool.getInstance();
@@ -36,7 +37,7 @@ public class Controller {
     private void logout()
     {
         System.out.println("you have been logged out");
-        mainMenu();
+        loginMenu();
     }
 
     private void loginMenu() 
@@ -57,7 +58,7 @@ public class Controller {
 
     private void mainMenu() 
     {
-        String[] options = {"option", "option", "logout", "Exit"};
+        String[] options = {"option", "Delete account", "logout", "Exit"};
         menu = new Menu("Main Menu", options);
         do 
         {

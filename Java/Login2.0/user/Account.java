@@ -39,7 +39,22 @@ public class Account
 
     private String promptPassword()
     {
-        return tool.getString("Password: ");
+        //return tool.getString("Password: ");
+
+        char password[] = null;
+        try 
+        {
+           password = PasswordField.getPassword(System.in, "Password: ");
+        } 
+        catch(IOException ioe) 
+        {
+           ioe.printStackTrace();
+        }
+        if(password == null) 
+        {
+           System.out.println("No password entered");
+        }
+        return String.valueOf(password);
     }
 
     public void createAccount()
