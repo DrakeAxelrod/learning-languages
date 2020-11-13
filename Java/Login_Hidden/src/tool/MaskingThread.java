@@ -5,7 +5,16 @@ package tool;
  */
 
 class MaskingThread extends Thread {
-   private volatile boolean stop;
+   private volatile boolean stop; // volatile stores the variable in the computers main memory
+    // volatile essentially makes it so that threads access the same value.
+
+    /*
+    Synchronization in Java is possible by using Java keywords synchronized and volatile and locks.
+   In Java, we can not have synchronized variable. Using synchronized keyword with a variable is illegal and will result in compilation error. 
+   Instead of using the synchronized variable in Java, you can use the java volatile variable, 
+   which will instruct JVM threads to read the value of volatile variable from main memory and don’t cache it locally.
+   If a variable is not shared between multiple threads then there is no need to use the volatile keyword.
+    */ 
    private char echochar = '*';
 
   /**
