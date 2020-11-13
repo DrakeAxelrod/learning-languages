@@ -15,7 +15,8 @@ public class PasswordField {
    *@return The password as entered by the user.
    */
 
-   public static final char[] getPassword(InputStream in, String prompt) throws IOException {
+   public static final char[] getPassword(InputStream in, String prompt) throws IOException 
+   {
       MaskingThread maskingthread = new MaskingThread(prompt);
       Thread thread = new Thread(maskingthread);
       thread.start();
@@ -30,25 +31,32 @@ public class PasswordField {
       int offset = 0;
       int c;
 
-      loop:   while (true) {
-         switch (c = in.read()) {
+      loop:   while (true) 
+      {
+         switch (c = in.read()) 
+         {
             case -1:
             case '\n':
                break loop;
 
             case '\r':
                int c2 = in.read();
-               if ((c2 != '\n') && (c2 != -1)) {
-                  if (!(in instanceof PushbackInputStream)) {
+               if ((c2 != '\n') && (c2 != -1)) 
+               {
+                  if (!(in instanceof PushbackInputStream)) 
+                  {
                      in = new PushbackInputStream(in);
                   }
                   ((PushbackInputStream)in).unread(c2);
-                } else {
+                } 
+                else 
+                {
                   break loop;
                 }
 
                 default:
-                   if (--room < 0) {
+                   if (--room < 0) 
+                   {
                       buf = new char[offset + 128];
                       room = buf.length - offset - 1;
                       System.arraycopy(lineBuffer, 0, buf, 0, offset);

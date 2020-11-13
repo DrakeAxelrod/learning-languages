@@ -4,9 +4,10 @@ package tool;
  * This class attempts to erase characters echoed to the console.
  */
 
-class MaskingThread extends Thread {
+class MaskingThread extends Thread 
+{
    private volatile boolean stop; // volatile stores the variable in the computers main memory
-    // volatile essentially makes it so that threads access the same value.
+    // volatile allows us actually stop the thread.
 
     /*
     Synchronization in Java is possible by using Java keywords synchronized and volatile and locks.
@@ -20,32 +21,41 @@ class MaskingThread extends Thread {
   /**
    *@param prompt The prompt displayed to the user
    */
-   public MaskingThread(String prompt) {
+   public MaskingThread(String prompt) 
+   {
       System.out.print(prompt);
    }
 
   /**
    * Begin masking until asked to stop.
    */
-   public void run() {
+   public void run() 
+   {
 
       int priority = Thread.currentThread().getPriority();
       Thread.currentThread().setPriority(Thread.MAX_PRIORITY);
 
-      try {
+      try 
+      {
          stop = true;
-         while(stop) {
+         while(stop) 
+         {
            System.out.print("\010" + echochar);
-           try {
+           try 
+           {
               Thread.currentThread();
               // attempt masking at this rate
               Thread.sleep(1);
-           }catch (InterruptedException iex) {
+           }
+           catch (InterruptedException iex) 
+           {
               Thread.currentThread().interrupt();
               return;
            }
          }
-      } finally { // restore the original priority
+      } 
+      finally 
+      { // restore the original priority
          Thread.currentThread().setPriority(priority);
       }
    }
@@ -53,7 +63,8 @@ class MaskingThread extends Thread {
   /**
    * Instruct the thread to stop masking.
    */
-   public void stopMasking() {
+   public void stopMasking() 
+   {
       this.stop = false;
    }
 }
