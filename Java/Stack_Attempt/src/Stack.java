@@ -3,9 +3,9 @@ public class Stack<T> implements Stackable<T> {
     private Stack<T> previous;
     private T value;
 
-    Stack(){}
+    public Stack(){}
 
-    Stack(T value)
+    public Stack(T value)
     {
         this.value = value;
     }
