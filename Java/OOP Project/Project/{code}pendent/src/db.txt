@@ -1,0 +1,24 @@
+Employee;7;Barbara Liskov;1930;OOP Street 1;35000
+Employee;;Bob Smith;1930;1044 Randolph street; 13457
+Employee;;Jill Johnson;1985;3845 Rainbow Street;14568
+Employee;;Jack Frost;1934;1453 Tilden Street;16893
+Employee;;Anna Green;1959;1854 Rose Avenue;13578
+Employee;;Sam Jones;1993;1784 Sunrise Blvd;12385
+Employee;;Emanuel Black;1992;1039 Surfer's Paradise Lane;12547
+Customer;;Vernita
+Customer;;Navya
+Customer;;Drake
+Customer;;Karen
+Customer;;Axel
+Game;Crash Bandicoot;Racing;17.59;1957;false;2020;8;20
+Game;The Legend of Zelda;Explore;12.29;1974;true;2020;8;20
+Album;London Calling;The Clash;1980;14.99;false;2020;6;10
+Album;Legend;Bob Marley & The Wailers;1984;17.99;true;2020;8;23
+Album;The Dark Side of the Moon;Pink Floyd;1973;24.99;false;2020;8;23
+Album;The Black Album;Metallica;1991;19.99;true;2020;8;23
+Album;Blood Sugar Sex Magik;Red Hot Chili Peppers;1991;18.99;false;2020;8;20
+Game;Sonic: The Hedgehog;Explore;18.99;1957;false;2020;8;20
+Game;Prince of Persia;Impossible;15.39;1984;false;2020;8;20
+Game;Super Mario;Classic;18.99;1999;false;2020;8;20
+Game;Street Fighter;Fighting;11.99;1991;true;2020;8;20
+Game;Tekken;Fighting;17.99;1942;false;2020;8;20
